@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>treine.me</title>
+
+    <!--
+      MODELO DE TEXTO PARA O SEU README.md
+      (copie o conteúdo abaixo para o arquivo README.md no GitHub)
+
+      # treine.me - Landing Page
+
+      Projeto desenvolvido a partir do layout disponibilizado no Figma para a disciplina **Aula 02 - Reforçando o Universo Web**.
+
+      ## 🎯 Objetivo
+
+      Reproduzir de forma fiel o layout proposto no Figma utilizando **HTML**, **CSS** e **JavaScript**, praticando:
+
+      - Estruturação semântica de páginas web;
+      - Criação de layouts responsivos;
+      - Aplicação de estilos com CSS (tipografia, espaçamento, cores, sombras, alinhamento, etc.);
+      - Implementação de pequenos comportamentos interativos com JavaScript.
+
+      ## 🧱 Tecnologias utilizadas
+
+      - HTML5
+      - CSS3
+      - JavaScript (ES6+)
+
+      ## 📐 Estrutura do projeto
+
+      - `index.html` — Estrutura principal da página (header, navegação, seção principal e rodapé);
+      - `style.css` — Estilização completa baseada no layout do Figma;
+      - `script.js` — Funcionalidades interativas da página (scroll suave, destaque do menu, etc.);
+      - `/assets` — Imagens utilizadas no layout (ilustração principal).
+
+      ## ✨ Funcionalidades
+
+      - Layout principal com seção de destaque (hero) apresentando o texto "Treinos exclusivos para você!";
+      - Navegação no topo com links para as seções **Home**, **Sobre** e **Treinar**;
+      - Botão de call-to-action "Comece já" simulando contato via WhatsApp;
+      - Efeito de hover em botões e links do menu;
+      - Scroll suave para as seções ao clicar no menu;
+      - Destaque visual do link ativo no menu de navegação.
+
+      ## 🚀 Como executar o projeto
+
+      1. Faça o clone deste repositório:
+         - `git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git`
+      2. Acesse a pasta do projeto:
+         - `cd NOME-DO-REPOSITORIO`
+      3. Abra o arquivo `index.html` diretamente no navegador **ou** utilize uma extensão/live server para visualizar o projeto.
+
+      ## 📌 Observações
+
+      - O projeto foi desenvolvido para fins educativos, seguindo o layout proposto no Figma;
+      - Sinta-se à vontade para melhorar o código, ajustar cores/tipografia ou adicionar novas seções;
+      - Qualquer ajuste adicional solicitado pelo professor pode ser facilmente incluído.
+
+      ---
+
+      Desenvolvido como parte da disciplina **Aprofundando no Universo Web**.
+    -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a href="#home" class="logo">treine.me</a>
+
+        <nav class="main-nav" aria-label="Navegação principal">
+          <button
+            class="nav-toggle"
+            aria-label="Abrir menu de navegação"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <ul class="nav-list">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li><a href="#treinar" class="nav-link">Treinar</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home" class="hero-wrapper">
+      <div class="container hero">
+        <section class="hero-text" aria-labelledby="hero-title">
+          <p class="hero-subtitle">Nós cuidamos da sua saúde</p>
+
+          <h1 id="hero-title" class="hero-title">
+            Treinos <span>exclusivos</span><br />
+            para você!
+          </h1>
+
+          <p class="hero-description">
+            Nós criamos treinos <strong>exclusivos e únicos para você.</strong>
+            Invista no seu corpo e
+            <strong>tenha muito mais performance</strong> e qualidade de vida.
+          </p>
+
+          <button class="cta-button" type="button" id="cta-button">
+            <span class="cta-icon" aria-hidden="true">💬</span>
+            <span>Comece já</span>
+          </button>
+        </section>
+
+        <section class="hero-image" aria-hidden="true">
+          <img
+            src="./imagem a ser usado).png"
+            alt="Ilustração de pessoas treinando em casa"
+          />
+        </section>
+      </div>
+
+      <section id="sobre" class="section about-section">
+        <div class="container section-content">
+          <h2>Sobre</h2>
+          <p>
+            A <strong>treine.me</strong> foi pensada para oferecer treinos
+            personalizados, focados em resultado e na sua rotina. Este projeto
+            foi desenvolvido como exercício prático da disciplina
+            <em>Aprofundando no Universo Web</em>, seguindo o layout proposto no
+            Figma.
+          </p>
+        </div>
+      </section>
+
+      <section id="treinar" class="section train-section">
+        <div class="container section-content">
+          <h2>Treinar</h2>
+          <p>
+            Clique no botão <strong>"Comece já"</strong> para ser redirecionado
+            ao contato via WhatsApp. A partir daí, você pode
+            imaginar como seria o fluxo real de inscrição para os treinos
+            exclusivos.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          fale conosco no instagram
+          <a href="https://instagram.com/treine.me" target="_blank"
+            >@treine.me</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
